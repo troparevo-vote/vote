@@ -1,4 +1,74 @@
 <!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vote</title>
+<style>
+  :root { --blue: #007bfb; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1b1b22;
+    background: #fff;
+    line-height: 1.5;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .name { font-weight: 700; color: var(--blue); }
+  .btn {
+    background: var(--blue);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 24px 72px; }
+  h1 { font-size: 40px; line-height: 1.15; margin: 0 0 12px; }
+  .lead { font-size: 18px; max-width: 38em; }
+  section { margin-top: 36px; }
+  h2 { font-size: 22px; margin-bottom: 8px; }
+  .card {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+  footer { padding: 8px 24px 32px; color: #666; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="name">vote</div>
+  <a class="btn" href="#form">Оставить голос</a>
+</header>
+<main>
+  <h1>Одностраничник</h1>
+  <p class="lead">Макет страницы голосования. На экране заголовок, короткое объяснение и место под форму.</p>
+  <section>
+    <h2>На этой странице</h2>
+    <div class="card">Один экран без перехода на другие разделы.</div>
+    <div class="card">Кнопка в шапке прокручивает к форме на этой же странице.</div>
+  </section>
+  <section id="form">
+    <h2>Форма</h2>
+    <p>Поля и состояния кнопки подключаются отдельно. Сейчас здесь только место под них.</p>
+    <button class="btn" type="button">Отправить</button>
+  </section>
+</main>
+<footer>Макет</footer>
+</body>
+</html>
+<!doctype html>
 <meta charset="utf-8">
 <title>vote</title>
 <h1>Hello World</h1>
